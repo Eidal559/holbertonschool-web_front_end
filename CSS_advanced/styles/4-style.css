@@ -7,6 +7,26 @@ body {
     font-family: var(--font-family-base);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
+    font-family: var(--font-family-title);
+}
+
+h2 {
+    font-family: var(--font-family-title);
+}
+
+h3 {
+    font-family: var(--font-family-title);
+}
+
+h4 {
+    font-family: var(--font-family-title);
+}
+
+h5 {
+    font-family: var(--font-family-title);
+}
+
+h6 {
     font-family: var(--font-family-title);
 }
