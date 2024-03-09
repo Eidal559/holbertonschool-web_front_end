@@ -18,6 +18,7 @@ body {
 .nav {
     margin: 0;
     padding: 0;
+    list-style: none;
     text-align: center;
 }
 
@@ -32,7 +33,7 @@ body {
 
 .nav .nav-link {
     display: block;
-    padding: var(--root-font-size) 1rem;
+    padding: 0.5rem 1rem;
 }
 
 .nav .nav-link:hover {
