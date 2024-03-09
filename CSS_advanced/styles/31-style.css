@@ -247,11 +247,11 @@ html {
     display: block;
     padding-top: 1rem;
     color: var(--color-primary);
-    position:relative;
+    position: relative;
 }
 
 .card-testimonial .card-quote::before {
-    content: "\201C";
+    content: '\201C';
     position: absolute;
     top: -4.5rem;
     left: -1rem;
