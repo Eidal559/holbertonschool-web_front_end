@@ -58,14 +58,26 @@ a:active {
     color: var(--section-title-color);
 }
 
+.section {
+    padding: var(--section-padding);
+}
 
-.section-header, .section-body, .section-footer .section {
+.section-header {
     text-align: var(--section-header-align);
     padding: var(--section-header-padding);
+}
+
+.section-body {
     padding: var(--section-body-padding);
+}
+
+.section-footer {
     padding: var(--section-footer-padding);
     text-align: var(--section-footer-align);
-    padding: var(--section-padding);
+}
+
+.footer {
+    padding: var(--footer-padding);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -79,7 +91,7 @@ html {
     -webkit-text-size-adjust: 100%
 }
 
-*, *:after, *:before {
+*, *:before, *:after {
     box-sizing: border-box;
 }
 
