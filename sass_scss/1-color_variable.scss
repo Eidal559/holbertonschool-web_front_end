@@ -1,2 +1,8 @@
-/* sass file that defines a color variable */
-$color:#3D3D3D;
+/* Use varible for recurrent color */
+$gray: #3D3D3D;
+body {
+    color: $gray;
+}
+p {
+    color: $gray;
+}
