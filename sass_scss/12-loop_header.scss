@@ -1,0 +1,8 @@
+// This file creates H* tags (from h1 to h5) with font sizes equal to their respective levels using @for
+
+@for $i from 1 through 5 {
+    h#{$i} {
+      font-size: #{$i}px;
+    }
+  }
+  
