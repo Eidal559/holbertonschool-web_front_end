@@ -1,0 +1,10 @@
+// This file assigns a text color to elements inside body tags and a different text color to elements of class .red inside body tags using nested declarations
+
+body {
+    color: #3D3D3D;
+  
+    .red {
+      color: #FF0000;
+    }
+  }
+  
