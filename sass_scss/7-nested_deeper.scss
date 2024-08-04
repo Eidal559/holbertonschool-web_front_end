@@ -1,0 +1,14 @@
+// This file assigns font sizes to body tags, h1 tags inside body tags, and h1 tags of class .smaller inside body tags using nested declarations
+
+body {
+    font-size: 14px;
+  
+    h1 {
+      font-size: 16px;
+  
+      &.smaller {
+        font-size: 12px;
+      }
+    }
+  }
+  
