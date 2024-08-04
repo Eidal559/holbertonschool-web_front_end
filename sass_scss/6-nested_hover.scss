@@ -1,0 +1,10 @@
+// This file assigns a text color to button tags and changes the text color when the user hovers over button tags using nested declarations
+
+button {
+    color: #FF0000;
+  
+    &:hover {
+      color: #00FF00;
+    }
+  }
+  
