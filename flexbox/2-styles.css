@@ -19,7 +19,6 @@
     --color-primary: #D73953;
     --color-black:  #090909;
     --color-white: #ffffff;
-    --color-grey: #a0a0a0;
     --color-light-grey: #f3f3f3;
     --color-dark-grey: #353535;
   
@@ -180,17 +179,14 @@
   /* Grid
       ============================= */
   
+  .row {
+    display: flex;
+  }
+  
   ul.row {
     margin: 0;
     padding: 0;
     list-style: none;
-  }
-  
-  .row {
-    content: '';
-    display: table;
-    clear: both;
-    display: flex;
   }
   
   [class*='col-'] {
@@ -260,9 +256,6 @@
   
   .header {
     padding: var(--header-padding);
-         position: relative;
-         z-index: 3;
-         background: transparent;
   }
   
   .header-logo {
@@ -374,10 +367,16 @@
     padding: 10rem 40rem 2rem 0;
   }
   
-  /* Section Latest news ============================= */
-
-  .section-latest-news {
+ /* Section BLOG
+      ============================= */
+  .section-blog .row {
     flex-direction: row-reverse;
+  }
+
+/* Section Latest news
+		============================= */
+  .section-latest-news .row {
+	flex-direction: row-reverse;
   }
 
   /*** 4. CARD ***/
