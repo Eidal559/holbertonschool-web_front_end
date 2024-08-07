@@ -364,11 +364,11 @@
   .section-hero .section-inner {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     min-height: 50vh;
   }
-  
+
   /* Section BLOG ============================= */
   .section-blog .row {
       flex-direction: row-reverse;
