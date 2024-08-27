@@ -58,7 +58,7 @@ Add Bootstrap to reset the CSS styling.
 
 **Your final page must look like this:**
 
-![1-index](assets/0-index.jpg)
+![1-index]
 
 ### [1. Blocks](./1-index.html)
 
@@ -129,7 +129,7 @@ Add Bootstrap to reset the CSS styling.
 
 **Build this responsive web page:**
 
-![1-index](assets/1-index.gif)
+![1-index]
 
 **Requirements:**
 
@@ -334,9 +334,9 @@ For all cells of all rows:
 
 **Build this responsive web page:**
 
-![2.1-index](assets/2.1-index.png)
+![2.1-index]
 
-![2-index](assets/2-index.gif)
+![2-index]
 
 **Requirements:**
 
@@ -482,11 +482,11 @@ The second section:
 
 **Build this responsive web page:**
 
-![3.1-index.html](assets/3.1-index.png)
+![3.1-index.html]
 
-![3.2-index.html](assets/3.2-index.png)
+![3.2-index.html]
 
-![3-index.html](assets/3-index.gif)
+![3-index.html]
 
 **Requirements:**
 
@@ -597,13 +597,13 @@ The second section:
 
 **Build this responsive web page:**
 
-![4.1-index](assets/4.1-index.png)
+![4.1-index]
 
-![4.2-index](assets/4.2-index.png)
+![4.2-index]
 
-![4.2-index](assets/4.3-index.png)
+![4.2-index]
 
-![4-index](assets/4-index.gif)
+![4-index]
 
 **Requirements:**
 
@@ -653,7 +653,7 @@ The second section:
 
 **Build this responsive web page:**
 
-![5-index](assets/5-index.gif)
+![5-index]
 
 **Requirements:**
 
@@ -814,11 +814,11 @@ The second section:
 
 **Create the custom stylesheet *6-styles.css* to match this layout.**
 
-![6.1-index](assets/6.1-index.png)
+![6.1-index]
 
-![6.2-index](assets/6.2-index.png)
+![6.2-index]
 
-![6-index](assets/6-index.gif)
+![6-index]
 
 **Requirements:**
 
