@@ -837,4 +837,4 @@ The second section:
 
 ## Author
 
-**Ladie Juarbe** -(https://github.com/dantsub) :octocat:
+**Ladie Juarbe**
