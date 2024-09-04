@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>Task 3</title>
+    <title>Task 4</title>
   </head>
   <body>
     <script
@@ -38,7 +38,14 @@
           .appendTo("body");
       }
 
+      function replaceFamilyTree() {
+        $("tbody").html(
+          "<tr><td>Gerard</td><td>Bonissa</td></tr>"
+        );
+      }
+
       createFamilyTree();
+      replaceFamilyTree();
     </script>
   </body>
 </html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Task 5</title>
+    <style>
+      .remove-btn {
+        background-color: orange;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script type="application/javascript">
+      function createFamilyTree() {
+        $("<table border='1'></table>")
+          .append(
+            $("<thead></thead>").append(
+              $("<tr></tr>").append(
+                $("<th></th>").text("Firstname"),
+                $("<th></th>").text("Lastname")
+              )
+            ),
+            $("<tbody></tbody>")
+          )
+          .appendTo("body");
+      }
+
+      function addNewMember(firstName, lastName) {
+        $("<tr></tr>")
+          .append(
+            $("<td></td>").text(firstName),
+            $("<td></td>").text(lastName),
+            $("<td></td>")
+              .text("(x)")
+              .addClass("remove-btn")
+              .click(function () {
+                $(this).closest("tr").remove();
+              })
+          )
+          .appendTo("tbody");
+      }
+
+      createFamilyTree();
+      addNewMember("Guillaume", "Salva");
+      addNewMember("Arielle", "Snizt");
+      addNewMember("Fanette", "Snizt");
+      addNewMember("Gerard", "Snizt");
+      addNewMember("Victor", "Salva");
+    </script>
+  </body>
+</html>
