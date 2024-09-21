@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Example</title>
+</head>
+<body>
+    <h1>Login to the website</h1>
+    <input type="text" id="firstname" placeholder="First Name">
+    <input type="text" id="email" placeholder="Email">
+
+    <button onclick="setCookies()">Log me in</button>
+
+    <h2>Cookies</h2>
+    <button onclick="showCookies()">Show the cookies</button>
+
+    <!-- This div is needed to display the cookies -->
+    <div id="cookies-display"></div>
+
+    <script>
+        // Function to set cookies based on input values
+        function setCookies() {
+            const firstname = document.getElementById('firstname').value;
+            const email = document.getElementById('email').value;
+
+            // Set the cookies with a 7-day expiration
+            document.cookie = `firstname=${firstname}; path=/; max-age=${7 * 24 * 60 * 60}`;
+            document.cookie = `email=${email}; path=/; max-age=${7 * 24 * 60 * 60}`;
+
+            alert('Cookies have been set!');
+        }
+
+        // Function to show the current cookies
+        function showCookies() {
+            // Create a new paragraph element
+            const p = document.createElement('p');
+
+            // Get the cookie string and display it
+            const cookies = document.cookie;
+            p.innerHTML = `Cookies: ${cookies}`;
+
+            // Get the cookies display div and append the paragraph
+            const displayDiv = document.getElementById('cookies-display');
+            displayDiv.innerHTML = '';  // Clear previous content
+            displayDiv.appendChild(p);
+        }
+    </script>
+</body>
+</html>
