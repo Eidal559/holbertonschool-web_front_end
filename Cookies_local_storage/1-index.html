@@ -18,12 +18,10 @@
     <div id="cookies-display"></div>
 
     <script>
-        // Function to set cookies with 10-day expiration based on input values
         function setCookies() {
             const firstname = document.getElementById('firstname').value;
             const email = document.getElementById('email').value;
 
-            // Set the cookies with a 10-day expiration (in seconds) 
             const expirationTime = 10 * 24 * 60 * 60;
 
             document.cookie = `firstname=${firstname}; path=/; max-age=${expirationTime}`;
@@ -34,7 +32,6 @@
 
         function showCookies() {
             const p = document.createElement('p');
-
             const cookies = document.cookie;
             p.innerHTML = `Cookies: ${cookies}`;
 

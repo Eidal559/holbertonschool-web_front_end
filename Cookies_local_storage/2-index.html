@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cookie Example</title>
+    <title>Read Cookies Example</title>
 </head>
 <body>
     <h1>Login to the website</h1>
@@ -22,16 +22,31 @@
             const firstname = document.getElementById('firstname').value;
             const email = document.getElementById('email').value;
 
-            document.cookie = `firstname=${firstname}; path=/; max-age=${7 * 24 * 60 * 60}`;
-            document.cookie = `email=${email}; path=/; max-age=${7 * 24 * 60 * 60}`;
+            const expirationTime = 10 * 24 * 60 * 60;
 
-            alert('Cookies have been set!');
+            document.cookie = `firstname=${firstname}; path=/; max-age=${expirationTime}`;
+            document.cookie = `email=${email}; path=/; max-age=${expirationTime}`;
+
+            alert('Cookies have been set for 10 days!');
         }
-        function showCookies() {
-            const p = document.createElement('p');
 
-            const cookies = document.cookie;
-            p.innerHTML = `Cookies: ${cookies}`;
+        function getCookie(name) {
+            const cookies = document.cookie.split('; ');
+            for (let i = 0; i < cookies.length; i++) {
+                const [key, value] = cookies[i].split('=');
+                if (key === name) {
+                    return value;
+                }
+            }
+            return '';
+        }
+
+        function showCookies() {
+            const firstname = getCookie('firstname');
+            const email = getCookie('email');
+
+            const p = document.createElement('p');
+            p.innerHTML = `Email: ${email} - Firstname: ${firstname}`;
 
             const displayDiv = document.getElementById('cookies-display');
             displayDiv.innerHTML = '';
